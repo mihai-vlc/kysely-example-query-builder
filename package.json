@@ -1,0 +1,29 @@
+{
+    "name": "ts-sql-query-builder",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start:dev": "tsx watch main.ts",
+        "migration-create": "tsx tools/new-migration.ts",
+        "migration-list": "tsx migrations.ts pending",
+        "migration-down": "tsx migrations.ts down",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "better-sqlite3": "^8.0.1",
+        "kysely": "^0.23.4",
+        "tsx": "^3.12.2",
+        "umzug": "^3.2.1",
+        "winston": "^3.8.2"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.19",
+        "@typescript-eslint/eslint-plugin": "^5.50.0",
+        "@typescript-eslint/parser": "^5.50.0",
+        "eslint": "^8.33.0"
+    }
+}
